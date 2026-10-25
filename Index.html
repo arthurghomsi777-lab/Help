@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Chatbot Help</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            text-align: center;
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Bienvenue sur mon application d'assistance</h1>
+        <p>Cliquez sur la bulle en bas à droite pour discuter avec l'assistant autonome.</p>
+    </div>
+
+    <!-- Script d'intégration du widget Coze Chatbot -->
+    <script src="https://bytednsdoc.com"></script>
+    <script>
+        new CozeWebChat.WebChat({
+            config: {
+                // Remplacez par l'ID de votre bot Coze si nécessaire
+                bot_id: '7429182379104780306', 
+            },
+            componentProps: {
+                title: 'Help',
+            },
+        });
+    </script>
+
+</body>
+</html>
